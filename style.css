@@ -1,0 +1,56 @@
+body {
+    background: rgb(65,179,163);
+    background: linear-gradient(180deg, rgba(65,179,163,1) 0%, 
+    rgb(132, 219, 176) 25%, 
+    rgba(195,141,158,1) 50%, 
+    rgba(234,138,135,1) 75%, 
+    rgb(226, 125, 96) 100%);
+}
+    div{
+        position: relative;
+        top: -100px;
+    }
+        h1 {
+            font-family: Montserrat; 
+            font-weight: 900;
+            font-size: 140px; 
+            color: #ffffff;
+            text-align: center; 
+            word-spacing: 10px;
+            padding-left: 15px;
+        }
+        h2 {
+            font-family: Montserrat; 
+            font-weight: 600; 
+            color: #ffffff; 
+            word-spacing: 10px;
+            padding-left: 25px;
+        }
+        #box {
+            border-radius: 25px;
+            border: 2px solid #3b3636;
+        }
+        blockquote {
+            font-family: Cardo; 
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            max-width: 1200px; 
+            text-align: justify;
+            text-indent: 5%;
+            word-spacing: 5px;
+            letter-spacing: 2px; 
+            padding-left: 25px;
+        }
+        #child {
+            color: #000000;
+        }
+        #teen {
+            color: #3b3636;
+        }
+        #college {
+            color: #ffffff;
+        }
+        abbr {
+            text-decoration: none;
+        }
