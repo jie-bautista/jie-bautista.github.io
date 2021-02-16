@@ -69,6 +69,11 @@ body {
     font-size: 13px;
 }
 
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .contact .li {
     display: flex;
     align-items: center;
@@ -90,7 +95,7 @@ body {
 .skills .li,
 .hobbies .li {
     width: 100px;
-    height: 100px;
+    height: 25px;
     margin-bottom: 15px;
     border-radius: 15px;
     background: #f5f5f5;
@@ -103,7 +108,7 @@ body {
 .skills .text,
 .hobbies .text {
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 700;
     color: #000000;
 }
 
@@ -152,46 +157,53 @@ body {
 }
 
 .inner .exp_li,
-.inner .educ_li {
+.inner .educ_li,
+.inner .sem_li {
     display: flex;
     margin-bottom: 15px;
 }
 
 .inner .exp_li .date,
-.inner .educ_li .date {
+.inner .educ_li .date,
+.inner .sem_li .date {
     width: 125px;
 }
 
 .inner .exp_li .info,
-.inner .educ_li .info {
+.inner .educ_li .info,
+.inner .sem_li .info {
     width: calc(100% - 125px);
     padding-left: 25px;
     position: relative;
 }
 
 .inner .exp_li .info_title,
-.inner .educ_li .info_title {
+.inner .educ_li .info_title,
+.inner .sem_li .info_title {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
 }
 
 .inner .exp_li .info_sub,
-.inner .educ_li .info_sub {
+.inner .educ_li .info_sub,
+.inner .sem_li .info_sub {
     font-weight: 300;
     font-size: 14px;
     margin-top: 3px;
 }
 
 .inner .exp_li .info_content,
-.inner .educ_li .info_content {
+.inner .educ_li .info_content,
+.inner .sem_li .info_content {
     margin-top: 25px;
     color: #000000;
     text-align: justify;
 }
 
 .inner .exp_li .info::before,
-.inner .educ_li .info::before {
+.inner .educ_li .info::before,
+.inner .sem_li .info::before {
     content: "";
     position: absolute;
     top: 3px;
@@ -203,7 +215,8 @@ body {
 }
 
 .inner .exp_li .info::after,
-.inner .educ_li .info::after {
+.inner .educ_li .info::after,
+.inner .sem_li .info::after {
     content: "";
     position: absolute;
     top: 10px;
