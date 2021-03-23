@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    color: #f5f5f5;
+}
+body {
+    background: linear-gradient(90deg, #41b3a3, #c38d9e);
+    padding: 0 32px;
+}
+h1 {
+    font-family: Montserrat; 
+    font-weight: 900;
+    font-size: 75px; 
+    color: #ffffff;
+    word-spacing: 10px;
+    padding-left: 15px;
+    letter-spacing: 5px;
+}
+.nav ul {
+    display: inline-flex;
+    padding: 50px 18px;
+}
+.nav ul li a {
+    text-decoration: none;
+    margin: 0px 20px;
+    color: #f5f5f5;
+    
+}
+.logo img {
+    width: 30px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+.active a {
+    color: #4C5B61 !important;
+    font-weight: 700 !important;
+}
+.banner {
+    padding-bottom: 400px;
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: relative;
+    color: #f5f5f5;
+}
+.text {
+    width: 50%;
+    float: left;
+}
+.item {
+    width: 50%;
+    float: right;
+    margin-top: -100px;
+}
+.button {
+    margin: 0 5px 0 5px;
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#71a5a1, #85a0a1), radial-gradient(circle at top left, #fd00da, #ffa400);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+#left {
+    background-image: linear-gradient(#41b3a3, #41b3a3), radial-gradient(circle at top left, #fd00da, #ffa400);
+}
+.button a{
+    display: inline-flex;
+    padding: 8px 22px;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.block {
+    display: inline-block;
+}
+.player {
+    background: #0f121379;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.player {
+    float: left;
+}
+img {
+    border-radius: 10px;
+}
+.music {
+    padding-top: 5px;
+}
+.desc {
+    padding-top: 50px;
+    line-height: 25px;
+    text-align: justify;
+}
+.desc .title {
+    margin-left: 125px;
+}
+
