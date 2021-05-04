@@ -87,23 +87,24 @@
             width: 25%;
             margin: auto;
         }
-        button{
+        .submit{
             position: absolute;
             bottom: -450px;
             right: 230px;
             width: 30%;
+            height: 50px;
             margin-top: 10px;
             padding: 10px;
             border: none;
             border-radius: 30px;
-            background: #52ad9c;
+            background: #b31414;
             color: #fff;
-            font-size: 15px;
+            font-size: 25px;
             font-weight: bold;
         }
             button:hover{
             cursor: pointer;
-            background: #428a7d;
+            background: #b31414;
         }
         #myVideo {
             position: fixed;
@@ -113,6 +114,56 @@
             z-index: -1;
             filter: blur(2px);
             overflow: hidden;
+        }
+        .open-button {
+            background-color: #b31414;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            color: white;
+            font-size: 20px;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 0;
+            right: 28px;
+            width: 280px;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            border-radius: 10px;
+            z-index: 9;
+            box-shadow: -1px -1px 5px #2626266c;
+        }
+        .form {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .form .btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom:10px;
+            opacity: 0.8;
+        }
+        .form .cancel {
+            background-color: #b31414;
+        }
+        .form .btn:hover, .open-button:hover {
+            opacity: 1;
+        }
+        #fb{
+            width: 93%;
         }
     </style>
 </head>
@@ -154,6 +205,10 @@
         <div class="order-form">
             <form action="" method="">
                 <h3>Order Details</h3>
+                <div>
+                    <input type="radio" name="checkout" value="delivery">Delivery
+                    <input type="radio" name="checkout" value="pickup">Pick-up
+                </div>
                 <label>
                     <div class="menu">
                         <h4>Burgers</h4>
@@ -253,8 +308,9 @@
                         <input type="number" min="0" name="qty-drink">
                         <br>
                     </div>
+                    
                 </label>
-                <button type="submit" onclick="myAlert()">Place Order</button>
+                <button class="submit" type="submit" onclick="myAlert()">Place Order</button>
                 <script>
                     function myAlert() {
                       alert("Order submitted successfully!");
@@ -263,7 +319,23 @@
             </form> 
         </div>
     </div>
-
-
+    <button class="open-button" onclick="openForm()">Any Suggestions?</button>
+    <div class="popup" id="myForm">
+        <form class="form">
+          <h1>Feedback</h1>
+            <textarea id="fb" cols="30" rows="10" placeholder="Write something..."></textarea>
+          <button type="submit" class="btn">Submit Feedback</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+    </script>
 </body>
 </html>
