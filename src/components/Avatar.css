@@ -1,0 +1,6 @@
+.user {
+    width: 50px;
+    border-radius: 50%;
+    object-fit: fill;
+    border: 2px solid #3E428C;
+}
